@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <button class="check">check</button>
     <form class="search-form" action="submit">
       <h1>Github Profile Search</h1>
-      <input
-        class="searchbar"
-        name="searchbar"
-        type="text"
-        placeholder="search a Github User"
-      />
-      <div>
-        <img />
-        <div>
-          <p class="name"></p>
+      <div class="input-wrapper">
+        <input
+          class="searchbar"
+          name="searchbar"
+          type="text"
+          placeholder="search a Github User"
+          autocomplete="off"
+        />
+      </div>
+      <div class="user-card hidden">
+        <img class="avatar" src="#" />
+        <div class="user-info">
+          <p class="name" name="name"></p>
           <ul>
-            <li class="followers"></li>
-            <li class="following"></li>
-            <li class="repos"></li>
+            <li class="followers" name="followers"></li>
+            <li class="following" name="following"></li>
+            <li class="repos" name="repos"></li>
           </ul>
-          <a href=""></a>
+          <a href="" target="_blank"></a>
         </div>
       </div>
     </form>
